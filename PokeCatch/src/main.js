@@ -1,4 +1,4 @@
-import { getRandomPokemon } from "./fetch-helpers";
+import { getRandomPokemon, postDiscoveredPokemon } from "./fetch-helpers";
 import { renderPokemon, renderError, renderSuccess } from "./dom-helpers";
 
 const getAndRenderPokemon = async () => {

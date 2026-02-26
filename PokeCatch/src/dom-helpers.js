@@ -3,9 +3,8 @@ const error = document.querySelector('#error');
 const success = document.querySelector('#success');
 
 export const renderPokemon = (pokemonObj) => {
-    pokeList.innerHTML = "";
-
     pokemonObj.forEach((pokemon) => {
+       
     const li = document.createElement("li");
 
     const img = document.createElement("img");
@@ -21,6 +20,7 @@ export const renderPokemon = (pokemonObj) => {
     li.append(img, h3, p);
     pokeList.append(li);
   });
+
 }
 
 export const renderError = (msg) => {

@@ -15,6 +15,22 @@
         <p id="error"></p>
         <p id="success"></p>
       </section>
+      <h2> Capture Pokemon</h2>
+      <form action="https://formspree.io/f/mwvnyznz" method="POST">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div>
+          <label for="types">Types</label>
+          <input type="text" id="types" name="types">
+        </div>
+        <div>
+          <label for="favorite">Favorite</label>
+          <input type="checkbox" id="favorite" name="favorite">
+        </div>
+        <button type="submit">Capture</button>
+      </form>
       <section id="new-pokemon">
         <h2>Discovered Pokemon</h2>
         <button id="discover-button">Find New Pokemon</button>

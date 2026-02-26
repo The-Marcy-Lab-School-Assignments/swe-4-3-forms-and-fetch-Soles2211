@@ -7,7 +7,7 @@ export const getRandomPokemon = async () => {
       throw Error(`Fetch failed. ${response.status} ${response.statusText}`);
     }
 
-    const { data } = await response.json();
+    const data  = await response.json();
 
     const pokemonObj = [
       {
@@ -17,7 +17,7 @@ export const getRandomPokemon = async () => {
       },
     ];
 
-    return { data: [pokemonObj], error: null };
+    return { data: pokemonObj, error: null };
 
   } catch (error) {
     console.log(`Error: ${error.message}`);
@@ -35,7 +35,7 @@ export const postDiscoveredPokemon = async (formData) => {
         }
     }
     try {
-        const response = await fetch('https://formspree.io/f/xeelaoar', config);
+        const response = await fetch('https://formspree.io/f/mwvnyznz', config);
 
         if (!response.ok) {
             throw Error(`Failed to submit. ${response.status} ${response.statusText}`);
